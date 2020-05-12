@@ -1,0 +1,97 @@
+html,body{
+    padding:0;
+    margin:0;
+}
+
+div{
+    padding:0;
+    margin:0;
+}
+
+#wrong{
+    width: 200px;
+    text-align: center;
+    font-size: 15px;
+    line-height:25px;
+    margin: 10px;
+}
+
+#main{
+    width: 200px;
+    text-align: center;
+    font-size: 12px;
+    line-height:18px
+}
+
+#main-title{
+    padding:10px;
+    background-color: #F89F1B;
+    font-size: 20px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.541);
+}
+
+#checkboxs{
+    padding:10px;
+    text-align: center;
+}
+
+#personal{
+    padding-left:20px;
+    text-align: left;
+}
+
+#downloads{
+    height:fit-content;
+}
+
+#message{
+    width:100%;
+    height:18px;
+    font-size: 14px;
+    line-height:18px;
+    color: rgb(110, 150, 112);
+    font-style: italic;
+    background-color: rgb(211, 255, 198);
+    display: none;
+}
+
+.btn{
+    display: inline-block;
+    vertical-align: middle;
+    padding:0;
+    margin:0px;
+    width:100%;
+    height:40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn p{
+    margin-top:12px;
+    margin-right: 0;
+    text-align: center;
+}
+
+.red{
+    color: rgb(151, 151, 151);
+    background-color: rgb(78, 73, 65);
+    transition: all 0.2s;
+}
+
+.red:hover{
+    color: white;
+    background-color: rgb(122, 119, 113);
+    transition: all 0.2s;
+}
+
+.yellow{
+    color: rgb(68, 68, 68);
+    background-color: rgb(255, 226, 189);
+    transition: all 0.2s;
+}
+
+.yellow:hover{
+    color: black;
+    background-color: rgb(255, 212, 155);
+    transition: all 0.2s;
+}
