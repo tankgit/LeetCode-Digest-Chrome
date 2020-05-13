@@ -30,7 +30,7 @@ PS: 目前只支持中国区LeetCode，且插件为中文界面。
 
 ## Download
 
-[Chrome Web Store](https://chrome.google.com/webstore/detail/odmpdekbgnopnihflclpmokeogciimfb/publish-accepted?authuser=0&hl=en)
+[Chrome Web Store](https://chrome.google.com/webstore/detail/odmpdekbgnopnihflclpmokeogciimfb/)
 
 ## Others
 
