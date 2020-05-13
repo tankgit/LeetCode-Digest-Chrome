@@ -19,9 +19,11 @@
 	},
 	"content_scripts": [ {
 		"js": [ "inject.js" ],
-		"matches": ["http://leetcode-cn.com/*", "https://leetcode-cn.com/*"]
+		"matches": ["http://*/*", "https://*/*"]
      } ],
      "permissions": [
+		"http://leetcode-cn.com/",
+        "https://leetcode-cn.com/*",
         "tabs",
         "storage"
     ]

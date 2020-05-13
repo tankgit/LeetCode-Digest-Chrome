@@ -20,12 +20,12 @@ PS: 目前只支持中国区LeetCode，且插件为中文界面。
 
 - [x] 难度、标签、额外标签、题目获赞数等信息供选择
 - [x] 题目描述以及解题代码供选择
-- [x] 复制markdwon到粘贴板
+- [x] 复制markdown到粘贴板
 - [ ] 相似题目推荐
 - [ ] 国际版leetcode支持
 - [ ] 自定义题目描述CSS样式
-- [ ] 插件内markdwon额外笔记编辑
-- [ ] 下载保存为markdwon文件
+- [ ] 插件内markdown额外笔记编辑
+- [ ] 下载保存为markdown文件
 - [ ] 转到官方题解
 
 ## Download
