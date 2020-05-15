@@ -28,8 +28,17 @@ chrome.extension.onRequest.addListener(
 
             if (check["description"]){
                 var description=document.getElementsByClassName("notranslate")[1]
-                console.log('??',description)
-                res["description"]=description.innerHTML
+                html=description.innerHTML.replace(/^\s*[\r\n]/gm, '')
+                style="<style>\n\
+section pre{\n\
+    background-color: #eee;\n\
+    border: 1px solid #ddd;\n\
+    padding:10px;\n\
+    border-radius: 5px;\n\
+}\n\
+</style>\n"
+                html=style+"<section>\n"+html+"</section>"
+                res["description"]=html
             }
 
             if (check["code"]){
