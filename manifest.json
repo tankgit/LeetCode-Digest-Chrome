@@ -2,7 +2,7 @@
 {
 	"manifest_version": 2,
 	"name": "LeetCode Digest",
-	"version": "0.1",
+	"version": "0.1.1",
 
 	"description": "一键生成LeetCode的学习笔记，并保存成markdown。(目前仅支持中国区LeetCode!)",
 	"icons": {
