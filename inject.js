@@ -48,8 +48,9 @@ section pre{\n\
       if (check["code"]) {
         var codeLines = document.getElementsByClassName("view-line");
         var codeType = document
-          .getElementsByClassName("ant-select-selection-selected-value")[0]
-          .innerText.toLowerCase();
+          .getElementById("lang-select")
+          .children[1].innerText.toLowerCase();
+        console.log(codeType);
         switch (codeType) {
           case "c++":
             codeType = "cpp";
@@ -61,10 +62,26 @@ section pre{\n\
             codeType = "csharp";
             break;
         }
-        res["code"] = [codeType, ""];
+        codeList = [];
         for (line of codeLines) {
-          res["code"][1] += line.innerText + "\n";
+          code = line.innerText.split(" ").join(" ") + "\n"; //注意这里的split()里的那个空格不是后面join里的空格，它是个特殊字符。
+          pos = parseInt(line.style.top.split("px")[0]);
+          codeList.push([code, pos]);
         }
+        codeList.sort(function (a, b) {
+          keyA = a[1];
+          keyB = b[1];
+          if (keyA > keyB) return 1;
+          if (keyA < keyB) return -1;
+          return 0;
+        });
+        codeString = codeList
+          .map(function (e) {
+            return e[0];
+          })
+          .join("");
+        console.log(codeList, codeString);
+        res["code"] = [codeType, codeString];
       }
 
       sendResponse({ data: res }); //same as innerText
