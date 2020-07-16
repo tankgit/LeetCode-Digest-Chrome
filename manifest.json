@@ -1,28 +1,26 @@
-
 {
-	"manifest_version": 2,
-	"name": "LeetCode Digest",
-	"version": "0.1.1",
+  "manifest_version": 2,
+  "name": "LeetCode Digest",
+  "version": "0.1.2",
 
-	"description": "一键生成LeetCode的学习笔记，并保存成markdown。(目前仅支持中国区LeetCode!)",
-	"icons": {
-		"16": "img/16x16.png",	
-		"32": "img/32x32.png",	
-		"48": "img/48x48.png",	
-		"128": "img/128x128.png"	
-	},
+  "description": "一键生成LeetCode的学习笔记，并保存成markdown。(目前仅支持中国区LeetCode!)",
+  "icons": {
+    "16": "img/16x16.png",
+    "32": "img/32x32.png",
+    "48": "img/48x48.png",
+    "128": "img/128x128.png"
+  },
 
-	"browser_action": {
-		"default_icon": "img/128x128.png",	
-		"default_title": "一键生成LeetCode笔记",
-		"default_popup": "main.html"
-	},
-	"content_scripts": [ {
-		"js": [ "inject.js" ],
-		"matches": ["http://leetcode-cn.com/*", "https://leetcode-cn.com/*"]
-     } ],
-     "permissions": [
-        "tabs",
-        "storage"
-    ]
+  "browser_action": {
+    "default_icon": "img/128x128.png",
+    "default_title": "一键生成LeetCode笔记",
+    "default_popup": "main.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["inject.js"],
+      "matches": ["http://leetcode-cn.com/*", "https://leetcode-cn.com/*"]
+    }
+  ],
+  "permissions": ["tabs", "storage"]
 }
